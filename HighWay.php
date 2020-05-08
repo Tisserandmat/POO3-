@@ -19,8 +19,6 @@ abstract class HighWay
      */
     protected $maxSpeed;
 
-
-
     public function getCurrentVehicles(): array
     {
         return $this->currentVehicles;
