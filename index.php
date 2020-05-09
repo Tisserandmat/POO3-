@@ -72,5 +72,8 @@ var_dump($bikeTwo->switchOn());
 $bikeThree = new Bicycle('red', '1');
 $bikeThree->setCurrentSpeed(5);
 var_dump($bikeThree->switchOff());
+require_once 'Speedometer.php';
 
+echo Speedometer::convertKmToMiles(10).'</br>';
+echo Speedometer::convertMilesToKm(10);
 ?>
