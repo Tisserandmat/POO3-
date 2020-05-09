@@ -1,9 +1,20 @@
 <?php
-
+require 'LightableInterface.interface.php';
 require_once 'Vehicle.php';
 
-class Car extends Vehicle
+class Car extends Vehicle implements Lightableinterface
 {
+    public function switchOn()
+    {
+        // TODO: Implement switchOn() method.
+        return true;
+    }
+    public function switchOff()
+    {
+        // TODO: Implement switchOff() method.
+        return false;
+    }
+
     const ALLOWED_ENERGIES = [
         'fuel',
         'electric'

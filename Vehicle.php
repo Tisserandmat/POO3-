@@ -36,17 +36,17 @@ class Vehicle
         return "Go !";
     }
 
-    public function brake(): string
-    {
-        $sentence = "";
-        while ($this->currentSpeed > 0) {
-            $this->currentSpeed--;
-            $sentence .= "Brake !!!";
-        }
+    //public function brake(): string
+   // {
+        //$sentence = "";
+       // while ($this->currentSpeed > 0) {
+         //   $this->currentSpeed--;
+         //   $sentence .= "Brake !!!";
+       // }
 
-        $sentence .= "I'm stopped !";
-        return $sentence;
-    }
+       // $sentence .= "I'm stopped !";
+        //return $sentence;
+   // }
 
     public function getCurrentSpeed(): int
     {
@@ -89,4 +89,5 @@ class Vehicle
     {
         $this->nbWheels = $nbWheels;
     }
+
 }

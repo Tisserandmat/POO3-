@@ -1,5 +1,5 @@
 <?php
-require_once 'car.php';
+require_once 'Car.php';
 require_once 'Bicycle.php';
 require_once 'Vehicle.php';
 require_once 'Truck.php';
@@ -51,5 +51,26 @@ try{
 } finally {
     echo "Ma voiture roule comme un donut";
 }
+
+$carInterface = new Car('black', '4', 'Diesel');
+$carInterface->setCurrentSpeed(1);
+
+var_dump($carInterface->switchOff());
+$carInterfaceBis = new Car('red', '2', 'Diesel');
+$carInterfaceBis->setCurrentSpeed(4);
+
+var_dump($carInterfaceBis->switchOn());
+
+$bikeOne = new Bicycle('white', 1);
+$bikeOne->setCurrentSpeed(3);
+var_dump($bikeOne->switchOn());
+
+$bikeTwo = new Bicycle('white', 1);
+$bikeTwo->setCurrentSpeed(11);
+var_dump($bikeTwo->switchOn());
+
+$bikeThree = new Bicycle('red', '1');
+$bikeThree->setCurrentSpeed(5);
+var_dump($bikeThree->switchOff());
 
 ?>
